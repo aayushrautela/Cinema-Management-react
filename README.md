@@ -141,19 +141,6 @@ Open http://localhost:5000 - serves React app + API from same port
 | DELETE | /api/users/{id} | Delete user (Admin) |
 | GET | /api/cinemas | List all cinemas |
 
-## Tasks 3-4 Requirements Fulfilled
-
-### Task 3
-- ✅ User registration and editing
-- ✅ Parallelism handling when editing/deleting users (optimistic concurrency with LockVersion)
-- ✅ Creating and deleting screenings
-
-### Task 4
-- ✅ Seat reservation/cancellation implementation
-- ✅ Conflict handling for concurrent seat reservations (unique constraint + API 409 response)
-- ✅ Displaying occupied seats at selected screening (interactive seat grid)
-- ✅ Production-ready build (React builds to wwwroot)
-
 ## License
 
 This project is for educational purposes.

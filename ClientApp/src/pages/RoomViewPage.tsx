@@ -130,19 +130,25 @@ export default function RoomViewPage() {
                 </Link>
             </div>
 
-            {message && (
-                <div className={`alert alert-${message.type === 'success' ? 'success' : 'danger'} alert-dismissible`}>
-                    {message.text}
-                    <button type="button" className="btn-close" onClick={() => setMessage(null)}></button>
-                </div>
-            )}
+            {/* Fixed height container for messages to prevent layout shift */}
+            <div style={{ minHeight: '60px' }}>
+                {message && (
+                    <div className={`alert alert-${message.type === 'success' ? 'success' : 'danger'} alert-dismissible`}>
+                        {message.text}
+                        <button type="button" className="btn-close" onClick={() => setMessage(null)}></button>
+                    </div>
+                )}
+            </div>
 
-            {myReservations.length > 0 && (
-                <div className="alert alert-success">
-                    <strong>Your reservations:</strong>{' '}
-                    {myReservations.map((s) => `Row ${s.row}, Seat ${s.seat}`).join(' | ')}
-                </div>
-            )}
+            {/* Fixed height container for reservations display */}
+            <div style={{ minHeight: '50px' }}>
+                {myReservations.length > 0 && (
+                    <div className="alert alert-success">
+                        <strong>Your reservations:</strong>{' '}
+                        {myReservations.map((s) => `Row ${s.row}, Seat ${s.seat}`).join(' | ')}
+                    </div>
+                )}
+            </div>
 
             <div className="card shadow">
                 <div className="card-body">

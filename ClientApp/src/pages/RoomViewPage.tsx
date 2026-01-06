@@ -119,10 +119,10 @@ export default function RoomViewPage() {
                 <div>
                     <h2>{screening.filmTitle}</h2>
                     <p className="text-muted mb-1">
-                        📍 {screening.cinemaName} | 🕐 {formatDateTime(screening.startDateTime)}
+                        {screening.cinemaName} | {formatDateTime(screening.startDateTime)}
                     </p>
                     <p className="text-muted">
-                        💺 {reservedCount} / {screening.rows * screening.seatsPerRow} seats booked
+                        {reservedCount} / {screening.rows * screening.seatsPerRow} seats booked
                     </p>
                 </div>
                 <Link to="/" className="btn btn-outline-secondary">

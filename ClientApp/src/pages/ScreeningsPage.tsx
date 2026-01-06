@@ -49,7 +49,7 @@ export default function ScreeningsPage() {
 
     return (
         <div className="container mt-4">
-            <h2 className="mb-4">🎬 Upcoming Screenings</h2>
+            <h2 className="mb-4">Upcoming Screenings</h2>
 
             {error && <div className="alert alert-danger">{error}</div>}
 
@@ -65,16 +65,16 @@ export default function ScreeningsPage() {
                                 </div>
                                 <div className="card-body">
                                     <p className="card-text">
-                                        <strong>📍 Cinema:</strong> {screening.cinemaName}
+                                        <strong>Cinema:</strong> {screening.cinemaName}
                                     </p>
                                     <p className="card-text">
-                                        <strong>🕐 Time:</strong> {formatDateTime(screening.startDateTime)}
+                                        <strong>Time:</strong> {formatDateTime(screening.startDateTime)}
                                     </p>
                                     <p className="card-text">
-                                        <strong>💺 Room:</strong> {screening.rows} rows × {screening.seatsPerRow} seats
+                                        <strong>Room:</strong> {screening.rows} rows × {screening.seatsPerRow} seats
                                     </p>
                                     <p className="card-text">
-                                        <strong>🎟️ Booked:</strong> {screening.reservationCount} /{' '}
+                                        <strong>Booked:</strong> {screening.reservationCount} /{' '}
                                         {screening.rows * screening.seatsPerRow} seats
                                     </p>
                                 </div>

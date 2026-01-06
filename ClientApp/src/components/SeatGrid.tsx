@@ -35,7 +35,7 @@ export default function SeatGrid({ rows, seatsPerRow, seats, onSeatClick, disabl
                     className="bg-secondary text-white py-2 px-5 rounded mx-auto"
                     style={{ maxWidth: '60%' }}
                 >
-                    📽️ SCREEN
+                    SCREEN
                 </div>
             </div>
 

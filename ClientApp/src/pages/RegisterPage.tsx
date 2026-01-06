@@ -51,7 +51,7 @@ export default function RegisterPage() {
                 <div className="col-md-6 col-lg-5">
                     <div className="card shadow">
                         <div className="card-body p-4">
-                            <h2 className="text-center mb-4">🎬 Register</h2>
+                            <h2 className="text-center mb-4">Register</h2>
 
                             {error && (
                                 <div className="alert alert-danger" role="alert">

@@ -61,7 +61,7 @@ export default function MyReservationsPage() {
 
     return (
         <div className="container mt-4">
-            <h2 className="mb-4">🎟️ My Reservations</h2>
+            <h2 className="mb-4">My Reservations</h2>
 
             {error && <div className="alert alert-danger">{error}</div>}
 

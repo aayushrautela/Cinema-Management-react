@@ -87,7 +87,7 @@ export default function AdminScreeningsPage() {
     return (
         <div className="container mt-4">
             <div className="d-flex justify-content-between align-items-center mb-4">
-                <h2>🎬 Manage Screenings</h2>
+                <h2>Manage Screenings</h2>
                 <button className="btn btn-primary" onClick={() => setShowForm(!showForm)}>
                     {showForm ? 'Cancel' : '+ New Screening'}
                 </button>

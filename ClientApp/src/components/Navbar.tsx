@@ -14,7 +14,7 @@ export default function Navbar() {
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
             <div className="container">
                 <Link className="navbar-brand" to="/">
-                    🎬 Cinema Tickets
+                    Cinema Tickets
                 </Link>
                 <button
                     className="navbar-toggler"

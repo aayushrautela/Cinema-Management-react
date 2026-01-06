@@ -81,7 +81,7 @@ export default function ProfilePage() {
                 <div className="col-md-6">
                     <div className="card shadow">
                         <div className="card-header bg-primary text-white">
-                            <h4 className="mb-0">👤 Edit Profile</h4>
+                            <h4 className="mb-0">Edit Profile</h4>
                         </div>
                         <div className="card-body p-4">
                             {message && (

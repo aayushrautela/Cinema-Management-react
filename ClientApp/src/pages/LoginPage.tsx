@@ -32,7 +32,7 @@ export default function LoginPage() {
                 <div className="col-md-6 col-lg-4">
                     <div className="card shadow">
                         <div className="card-body p-4">
-                            <h2 className="text-center mb-4">🎬 Login</h2>
+                            <h2 className="text-center mb-4">Login</h2>
 
                             {error && (
                                 <div className="alert alert-danger" role="alert">
